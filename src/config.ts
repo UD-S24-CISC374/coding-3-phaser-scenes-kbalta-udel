@@ -1,5 +1,8 @@
 import Phaser from "phaser";
-import MainScene from "./scenes/mainScene";
+import Spring from "./scenes/spring";
+import Summer from "./scenes/summer";
+import Fall from "./scenes/fall";
+import Winter from "./scenes/winter";
 import PreloadScene from "./scenes/preloadScene";
 
 const DEFAULT_WIDTH = 1280;
@@ -17,7 +20,7 @@ export const CONFIG = {
         width: DEFAULT_WIDTH,
         height: DEFAULT_HEIGHT,
     },
-    scene: [PreloadScene, MainScene],
+    scene: [PreloadScene, Spring, Summer, Fall, Winter],
     physics: {
         default: "arcade",
         arcade: {
