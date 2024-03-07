@@ -6,10 +6,13 @@ export default class PreloadScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image("phaser-logo", "assets/img/phaser-logo.png");
+        this.load.image("springBackground", "assets/springBG.png");
+        this.load.image("summerBackground", "assets/summerBG.png");
+        this.load.image("fallBackground", "assets/fallBG.png");
+        this.load.image("winterBackground", "assets/winterBG.png");
     }
 
     create() {
-        this.scene.start("MainScene");
+        this.scene.start("SpringScene");
     }
 }
